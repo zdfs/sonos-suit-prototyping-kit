@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AA4BA,SAAU;EACR,WAAW,EAAE,IAAI;EACjB,cAAc,EAAE,IAAI",
+"sources": ["../../../assets/scss/common/_global.scss"],
+"names": [],
+"file": "style.css"
+}
