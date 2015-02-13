@@ -6,8 +6,8 @@ block main
 	+tout('austin')
 		h1.white Sonos Suit Starter Template
 		h4.subheader.white
-			| This starter template will help you easily prototype static HTML pages with Sonos Suit, Jade, Sass
-			| Grunt, and Express.
+			| This starter template will help you easily prototype static HTML pages with Sonos Suit, Jade, Sass,
+			| and Grunt.
 
 	.section
 		.row
@@ -18,12 +18,33 @@ block main
 					| Due to the amount of conveniences Github affords us, this project assumes you're familiar with Github and 
 					| have an account.
 				p
-					| The purpose of this project is to help you rapidly generate HTML prototypes. If you're using this as a fork,
-					| you can simply create a <code>gh-pages</code> branch of your repo, run <code>grunt deploy</code> and merge the
-					| generated HTML docs to the <code>gh-pages</code> branch and the HTML will be publicly visible on Github. Be sure
-					| to update your <code>github.io</code> address in the <code>package.json</code> as this ensures the correct
-					| link paths are generated.
-				h2 Creating new pages
+					| The purpose of this project is to help you rapidly generate HTML prototypes with Sonos Suit. The project
+					| leverages [Jade](http://jade-lang.com/) for HTML pre-processing (it's faster to write), [Sass](http://sass-lang.com/),
+					| and Grunt for building and minifying styles and scripts. If you have questions, or need help, please
+					| reach out to [suit@sonos.com](mailto:suit@sonos.com).
+				h2 Viewing Your Prototype
+				hr
+				p
+					| When you run the project on your local machine, you'll have access to your prototype at <code>localhost:3000</code>,
+					| which is great for you, but not for anyone else. In order for your pages to be viewed publicly, you'll need
+					| to put them on a server.
+				p
+					| Github has a pretty simple way to do this with [Github Pages](https://pages.github.com/). Let's say you
+					| forked this repo in to your own account. This fork will have two branches: <code>master</code> and
+					| <code>gh-pages</code>. If you go to <a href="http://zdfs.github.io/sonos-suit-prototyping-kit/public/</a>,
+					| you'll be able to view the generated HTML for this project. If you've forked this repo, your pages will
+					| will be viewable at <code>http://[your-account].github.io/sonos-suit-prototyping-kit/public</code>. Just
+					| make sure that the <code>homepage<code> field in your <code>package.json</code> is pointing to your
+					| Github account.
+				p
+					| To update the pages on the Github url, be sure to run <code>grunt deploy</code> and commit the changes to
+					| your repo. After the changes are synced, do a [pull request](https://help.github.com/articles/using-pull-requests/)
+					| using <code>gh-pages</code> branch as your <b>base</b>. Complete the pull request and your pages will soon
+					| be live at your <code>github.io</code> url.
+				p
+					| If you want to use your own server, you can do so. Just update whatever the url is to your own server in
+					| the <code>package.json</code> and run <code>grunt deploy</code>. You can then take the generated HTML files
+					| and upload them to the FTP server of your choice.
 				hr
 				p
 					| You can create new pages for your prototype simply by creating your own <code>.jade</code> files in the 'views'

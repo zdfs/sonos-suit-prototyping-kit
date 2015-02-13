@@ -1,0 +1,162 @@
+<!DOCTYPE html><!--[if IE 9]><html class="lt-ie10" lang="en"><![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Sonos Suit Starter Project</title>
+  <!--[if IE 9]><link rel="stylesheet" href="http://static.sonos.com/v2/stage/styles/min/ie/suit.css"><![endif]-->
+  <!--[if gt IE 9]><!--><link rel="stylesheet" href="http://static.sonos.com/v2/stage/styles/min/suit.css"><!--<![endif]-->
+  <link rel="stylesheet" href="http://zdfs.github.io/sonos-suit-prototyping-kit/public/styles/min/style.css">
+</head>
+<body data-init class="antialiased wireframe">
+  <div class="contain-to-grid">
+    <nav data-topbar data-options="is_hover: false; back_text: &lt;span class='icon-left-dir'&gt;&lt;/span&gt; Back;" class="top-bar sonos-bar">
+      <ul class="title-area">
+        <li class="name">
+          <h1><a>Sonos</a></h1>
+        </li>
+        <li class="toggle-topbar menu-icon"><a><span>Menu</span></a></li>
+      </ul>
+    </nav>
+  </div>
+  <!-- This is an example of a Jade mixin.-->
+  <div class="gradient gradient--austin">
+    <div class="row">
+      <div class="columns small-12">
+        <h1 class="white">Sonos Suit Starter Template</h1>
+        <h4 class="subheader white">
+          This starter template will help you easily prototype static HTML pages with Sonos Suit, Jade, Sass,
+          and Grunt.
+        </h4>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="row">
+      <div class="columns small-12">
+        <h2>Using the template</h2>
+        <hr>
+        <p>
+          Due to the amount of conveniences Github affords us, this project assumes you're familiar with Github and 
+          have an account.
+        </p>
+        <p>
+          The purpose of this project is to help you rapidly generate HTML prototypes with Sonos Suit. The project
+          leverages [Jade](http://jade-lang.com/) for HTML pre-processing (it's faster to write), [Sass](http://sass-lang.com/),
+          and Grunt for building and minifying styles and scripts. If you have questions, or need help, please
+          reach out to [suit@sonos.com](mailto:suit@sonos.com).
+        </p>
+        <h2>Viewing Your Prototype</h2>
+        <hr>
+        <p>
+          When you run the project on your local machine, you'll have access to your prototype at <code>localhost:3000</code>,
+          which is great for you, but not for anyone else. In order for your pages to be viewed publicly, you'll need
+          to put them on a server.
+        </p>
+        <p>
+          Github has a pretty simple way to do this with [Github Pages](https://pages.github.com/). Let's say you
+          forked this repo in to your own account. This fork will have two branches: <code>master</code> and
+          <code>gh-pages</code>. If you go to <a href="http://zdfs.github.io/sonos-suit-prototyping-kit/public/</a>,
+          you'll be able to view the generated HTML for this project. If you've forked this repo, your pages will
+          will be viewable at <code>http://[your-account].github.io/sonos-suit-prototyping-kit/public</code>. Just
+          make sure that the <code>homepage<code> field in your <code>package.json</code> is pointing to your
+          Github account.
+        </p>
+        <p>
+          To update the pages on the Github url, be sure to run <code>grunt deploy</code> and commit the changes to
+          your repo. After the changes are synced, do a [pull request](https://help.github.com/articles/using-pull-requests/)
+          using <code>gh-pages</code> branch as your <b>base</b>. Complete the pull request and your pages will soon
+          be live at your <code>github.io</code> url.
+        </p>
+        <p>
+          If you want to use your own server, you can do so. Just update whatever the url is to your own server in
+          the <code>package.json</code> and run <code>grunt deploy</code>. You can then take the generated HTML files
+          and upload them to the FTP server of your choice.
+        </p>
+        <hr>
+        <p>
+          You can create new pages for your prototype simply by creating your own <code>.jade</code> files in the 'views'
+          folder. Nested folders and views are supported and encouraged for hierarchy. If you create views while your server
+          is running, be sure to restart the server.
+        </p>
+        <p>Suit patterns which you can leverage are <a href="http://static.sonos.com/v2/live/" target="_blank">available here</a>.</p>
+        <h2>LiveReload</h2>
+        <hr>
+        <p>
+          This project supports LiveReload, which you can activate by running <code>grunt watch</code> in a separate
+          terminal window. Be sure to have the browser extension installed.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="footer section">
+    <div class="row">
+      <div class="columns large-6 medium-6 small-12">
+        <div class="row">
+          <div class="small-12 columns">
+            <ul class="social-block">
+              <li><a href="http://www.sonos-studio.com/" title="Sonos Studio" class="button sonos-studio"><span>Sonos<br>studio</span></a></li>
+              <li><a href="https://www.twitter.com/sonos" target="_blank" title="Twitter" class="button"><span class="icon icon-twitter"></span></a></li>
+              <li><a href="http://www.facebook.com/sonos" target="_blank" title="Facebook" class="button"><span class="icon icon-facebook"></span></a></li>
+              <li><a href="http://www.instagram.com/sonos" target="_blank" title="Instagram" class="button"><span class="icon icon-instagram"></span></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-12 columns">
+            <ul class="social-block">
+              <li><a href="https://plus.google.com/107670103958760496596" target="_blank" title="Google+" class="button"><span class="icon icon-gplus"></span></a></li>
+              <li><a href="http://www.pinterest.com/sonos/" target="_blank" title="Pinterest" class="button"><span class="icon icon-pinterest"></span></a></li>
+              <li><a href="http://www.linkedin.com/company/sonos-inc." target="_blank" title="LinkedIn" class="button"><span class="icon icon-linkedin"></span></a></li>
+              <li><a href="http://www.youtube.com/sonos" target="_blank" title="YouTube" class="button"><span class="icon icon-youtube-play"></span></a></li>
+              <li><a href="http://blog.sonos.com/" title="Sonos Blog" class="button blog"><span>Blog</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="large-6 medium-6 small-12 columns">
+        <div class="row">
+          <div class="small-12 columns">
+            <form data-abide data-options="validate_on_blur: false;" data-newsletter>
+              <div class="row collapse">
+                <div class="small-10 columns">
+                  <input type="email" placeholder="Enter Email Address" required><small class="error"></small>
+                </div>
+                <div class="small-2 columns">
+                  <button type="submit" data-reveal-id="newsletterModal" class="prefix">Go</button>
+                </div>
+              </div>
+              <div id="newsletterModal" data-reveal class="reveal-modal medium">
+                <h2></h2><a class="close-reveal-modal">&times;</a>
+              </div>
+            </form>
+            <h6 class="primary">Exclusive announcements and events. Not spam.</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 small-6 columns">
+        <ul class="inline-list light sonos-links">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Reviews</a></li>
+          <li><a href="#">Media Center</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">Dealer Store</a></li>
+          <li><a href="#">My Account</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="large-12 small-6 columns">
+        <ul class="inline-list site-links">
+          <li><a href="#">Site Map</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Legal</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="http://static.sonos.com/v2/stage/scripts/src/suit.js"></script>
+  <script src="http://zdfs.github.io/sonos-suit-prototyping-kit/public/scripts/min/common.js"></script>
+</body>
