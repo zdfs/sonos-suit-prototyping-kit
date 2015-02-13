@@ -102,7 +102,7 @@ var gruntConfig = {
 				pretty: true,
 				data: {
 					debug: false,
-					linkPath: '<%= pkg.repository.pages %>/public'
+					linkPath: '<%= pkg.homepage %>/public'
 				}
 			},
 

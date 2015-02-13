@@ -1,5 +1,5 @@
 {
-  "name": "suit-starter-project",
+  "name": "suit-suit-prototyping-kit",
   "version": "1.0.0",
   "description": "Easily prototype pages with Sonos Suit using Jade, Sass, and Grunt.",
   "main": "server.js",
@@ -8,10 +8,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zdfs/sonos-dev-program.git",
-    "pages": "http://zdfs.github.io/sonos-dev-program"
+    "url": "https://github.com/zdfs/sonos-suit-prototyping-kit.git"
   },
-  "homepage": "https://github.com/zdfs/sonos-redesign",
+  "homepage": "http://zdfs.github.io/sonos-suit-prototyping-kit",
   "dependencies": {
     "compression": "^1.2.0",
     "dir-to-json": "0.0.3",
