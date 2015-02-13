@@ -1,5 +1,10 @@
 Sonos Suit Prototyping Kit
-==============
+==========================
+
+Requirements:
+
+1. [Node.js](http://nodejs.org)
+2. Sass: install by running `gem install sass` from the terminal window.
 
 This is the Sonos Suit prototyping kit. To install, clone the repo or download the zip file to your computer.
 Run `npm install` and the project will install all of the appropriate dependencies. If you want to host your pages on
