@@ -48,6 +48,15 @@ var gruntConfig = {
 
 	},
 
+	concat: {
+
+		js: {
+			src: ['public/scripts/src/*.js'],
+			dest: 'public/scripts/src/all.js'
+		}
+
+	},
+
 	copy: {
 
 		images: {
@@ -137,7 +146,7 @@ var gruntConfig = {
 
 		scripts: {
 			files: ['assets/scripts/*.js'],
-			tasks: ['copy:js', 'uglify:js']
+			tasks: ['copy:js', 'concat:js', 'uglify:js']
 		},
 
 		livereload: {
@@ -146,7 +155,7 @@ var gruntConfig = {
 			},
 			files: [
 				'public/styles/**/*.css',
-				'public/scripts/*js'
+				'public/scripts/**/*js'
 			]
 		}
 
@@ -168,10 +177,12 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-express-server');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
+	grunt.loadNpmTasks('grunt-contrib-concat');
 
 	grunt.registerTask('predeploy', [ 'clean',
 																		'sass',
 																		'copy',
+																		'concat',
 																		'uglify',
 																		'cssmin'
 																		]);
