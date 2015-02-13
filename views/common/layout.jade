@@ -1,0 +1,22 @@
+include mixins
+
+doctype html
+| <!--[if IE 9]><html class="lt-ie10" lang="en"><![endif]-->
+| <!--[if gt IE 9]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+head
+	meta(charset="utf-8")
+	meta(name="viewport", content="width=device-width, initial-scale=1.0")
+	meta(name="robots", content="noindex, nofollow")
+	title Sonos Suit Starter Project
+	block css
+		| <!--[if IE 9]><link rel="stylesheet" href="http://static.sonos.com/v2/stage/styles/min/ie/suit.css"><![endif]-->
+		| <!--[if gt IE 9]><!--><link rel="stylesheet" href="http://static.sonos.com/v2/stage/styles/min/suit.css"><!--<![endif]-->
+		link(rel="stylesheet", href="#{linkPath}/styles/min/style.css")
+body(class="antialiased wireframe", data-init)
+	include header
+	block main
+	include footer
+	if settings && settings.env === 'development'
+		script(src="http://localhost:35729/livereload.js")
+	script(src="http://static.sonos.com/v2/stage/scripts/src/suit.js")
+	script(src="#{linkPath}/scripts/min/common.js")

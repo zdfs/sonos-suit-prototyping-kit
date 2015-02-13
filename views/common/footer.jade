@@ -1,0 +1,78 @@
+.footer.section
+	.row
+		.columns.large-6.medium-6.small-12
+			.row
+				.small-12.columns
+					ul.social-block
+						li
+							a.button.sonos-studio(href='http://www.sonos-studio.com/', title='Sonos Studio')
+								span
+									| Sonos
+									br
+									| studio
+						li
+							a.button(href='https://www.twitter.com/sonos', target='_blank', title='Twitter')
+								span.icon.icon-twitter
+						li
+							a.button(href='http://www.facebook.com/sonos', target='_blank', title='Facebook')
+								span.icon.icon-facebook
+						li
+							a.button(href='http://www.instagram.com/sonos', target='_blank', title='Instagram')
+								span.icon.icon-instagram
+			.row
+				.small-12.columns
+					ul.social-block
+						li
+							a.button(href='https://plus.google.com/107670103958760496596', target='_blank', title='Google+')
+								span.icon.icon-gplus
+						li
+							a.button(href='http://www.pinterest.com/sonos/', target='_blank', title='Pinterest')
+								span.icon.icon-pinterest
+						li
+							a.button(href='http://www.linkedin.com/company/sonos-inc.', target='_blank', title='LinkedIn')
+								span.icon.icon-linkedin
+						li
+							a.button(href='http://www.youtube.com/sonos', target='_blank', title='YouTube')
+								span.icon.icon-youtube-play
+						li
+							a.button.blog(href='http://blog.sonos.com/', title='Sonos Blog')
+								span Blog
+		.large-6.medium-6.small-12.columns
+			.row
+				.small-12.columns
+					form(data-abide, data-options='validate_on_blur: false;', data-newsletter)
+						.row.collapse
+							.small-10.columns
+								input(type='email', placeholder='Enter Email Address', required)
+								small.error
+							.small-2.columns
+								button.prefix(type='submit', data-reveal-id='newsletterModal') Go
+						#newsletterModal.reveal-modal.medium(data-reveal)
+							h2
+							a.close-reveal-modal &times;
+					h6.primary Exclusive announcements and events. Not spam.
+	.row
+		.large-12.small-6.columns
+			ul.inline-list.light.sonos-links
+				li
+					a(href='#') About
+				li
+					a(href='#') Reviews
+				li
+					a(href='#') Media Center
+				li
+					a(href='#') Jobs
+				li
+					a(href='#') Dealer Store
+				li
+					a(href='#') My Account
+				li
+					a(href='#') Contact Us
+		.large-12.small-6.columns
+			ul.inline-list.site-links
+				li
+					a(href='#') Site Map
+				li
+					a(href='#') Privacy Policy
+				li
+					a(href='#') Legal

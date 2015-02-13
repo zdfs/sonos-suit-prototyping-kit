@@ -1,0 +1,8 @@
+mixin tout(type, move)
+	div(class="gradient gradient--#{type}")
+		.row
+			.columns.small-12
+				if block
+					block
+				else
+					p Please add some tout content.

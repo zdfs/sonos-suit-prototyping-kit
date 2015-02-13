@@ -1,0 +1,39 @@
+extend common/layout
+
+block main
+
+	// This is an example of a Jade mixin.
+	+tout('austin')
+		h1.white Sonos Suit Starter Template
+		h4.subheader.white
+			| This starter template will help you easily prototype static HTML pages with Sonos Suit, Jade, Sass
+			| Grunt, and Express.
+
+	.section
+		.row
+			.columns.small-12
+				h2 Using the template
+				hr
+				p
+					| Due to the amount of conveniences Github affords us, this project assumes you're familiar with Github and 
+					| have an account.
+				p
+					| The purpose of this project is to help you rapidly generate HTML prototypes. If you're using this as a fork,
+					| you can simply create a <code>gh-pages</code> branch of your repo, run <code>grunt deploy</code> and merge the
+					| generated HTML docs to the <code>gh-pages</code> branch and the HTML will be publicly visible on Github. Be sure
+					| to update your <code>github.io</code> address in the <code>package.json</code> as this ensures the correct
+					| link paths are generated.
+				h2 Creating new pages
+				hr
+				p
+					| You can create new pages for your prototype simply by creating your own <code>.jade</code> files in the 'views'
+					| folder. Nested folders and views are supported and encouraged for hierarchy. If you create views while your server
+					| is running, be sure to restart the server.
+				p
+					| Suit patterns which you can leverage are <a href="http://static.sonos.com/v2/live/" target="_blank">available here</a>.
+				h2 LiveReload
+				hr
+				p
+					| This project supports LiveReload, which you can activate by running <code>grunt watch</code> in a separate
+					| terminal window. Be sure to have the browser extension installed.
+
